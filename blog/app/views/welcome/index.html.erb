@@ -22,13 +22,16 @@
   <!--link rel="stylesheet" href="assets/stylesheets/main.css"-->
   <%= stylesheet_link_tag "main.css", :media => "all" %>
   <!--script type="text/javascript" src="assets/javascripts/michelle.js"></script-->
-  <%= javascript_include_tag "michelle.js" %>
+  <%= javascript_include_tag "greeting.js" %>
   <!-- endbuild -->
 </head>
 
 <body ng-app="primediser">
 
 <h1 class="mine">HELLO WORLD</h1>
+<a id="greeting">click me</a>
+<div id="hello">Hello World</div>
+
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->

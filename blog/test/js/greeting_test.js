@@ -18,10 +18,10 @@ describe('overlay functional test', function() {
     it('displays the popup on clicking the link on test page', function() {
 
         expect($("h1").getText()).toEqual("HELLO WORLD");
-        var link = $("#my_link");
+        var link = $("#greeting");
         link.click();
         ptor.sleep(5000);
-        var section = $('div#greeting');
+        var section = $('div#hello');
         expect(section.getInnerHtml()).toEqual('Hello World');
 
 

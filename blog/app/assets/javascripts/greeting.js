@@ -1,13 +1,13 @@
 $(document).ready(function() {
     $("#greeting").on("click", show_text);
-    $("#greeting").hide();
+    $("#hello").hide();
 });
 
 mine = "michelle";
 
 function show_text() {
     if(mine === "michelle") {
-        $("#greeting").show();
+        $("#hello").show();
     }
     else {
         hide_text();
