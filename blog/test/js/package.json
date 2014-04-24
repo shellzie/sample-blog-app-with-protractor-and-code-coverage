@@ -1,0 +1,11 @@
+{
+  "name": "sample-protractor-app",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "protractor": "^0.22.0",
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1"
+  }
+}
