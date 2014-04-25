@@ -1,15 +1,7 @@
-// Generated on 2014-03-24 using generator-angular-fullstack 1.3.2
 'use strict';
-
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
 
 module.exports = function(grunt) {
 
-  // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
   // Time how long tasks take. Can help when optimizing build times
@@ -46,13 +38,11 @@ module.exports = function(grunt) {
     // Empties folders to start fresh
     clean: {
       coverageE2E: {
-        src: ['<%= dirs.coverageE2E %>/'],
+        src: ['<%= dirs.coverageE2E %>/']
       },
       javascript: {
-
           src: ['<%= dirs.javascriptDirectory %>/*.js']
       }
-
     },
 
     // Copies remaining files to places other tasks can use
@@ -67,7 +57,7 @@ module.exports = function(grunt) {
             './**/*'
           ]
         }]
-      },
+      }
     },
 
     // start - code coverage settings
@@ -113,8 +103,8 @@ module.exports = function(grunt) {
             'browser': 'chrome'
           }
         }
-      },
-    },
+      }
+    }
   });
 
   grunt.registerTask('default', [
